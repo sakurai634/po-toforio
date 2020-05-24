@@ -1,0 +1,11 @@
+PARAMS　フォントファミリぃ
+
+
+全フォント
+→font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+font-style: normal;
+font-weight: 600;
+
+でお願いします。
+
+
