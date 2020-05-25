@@ -50,3 +50,33 @@ img {
 
 /* common  */
 
+
+
+
+
+
+
+/* header */
+
+header {
+  padding-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 6%;
+}
+
+.header-logo h1 a {
+  color: #222;
+}
+
+.header-nav nav ul {
+  display: flex;
+}
+
+.header-nav nav ul li {
+  padding: 0 15px;
+}
+
+.header-nav nav ul li a {
+  color: #222;
+}
