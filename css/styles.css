@@ -43,4 +43,10 @@ a {
 
 img {
   object-fit: cover;
+  width: 450px;
+  height: 270px;
 }
+
+
+/* common  */
+
