@@ -50,7 +50,11 @@ img {
 
 /* common  */
 
-
+.title {
+  font-size: 1.75rem;
+  margin-top: 200px;
+  padding-bottom: 50px;
+}
 
 
 
@@ -67,6 +71,7 @@ header {
 
 .header-logo h1 a {
   color: #222;
+  font-size: 1.125rem;
 }
 
 .header-nav nav ul {
@@ -79,6 +84,7 @@ header {
 
 .header-nav nav ul li a {
   color: #222;
+  font-size: 1.125rem;
 }
 
 .home-content {
