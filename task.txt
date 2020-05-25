@@ -9,3 +9,35 @@ font-weight: 600;
 でお願いします。
 
 
+
+
+（追加）
+
+＜PARAMS＞　
+→font-family: source-han-sans-japanese, sans-serif;
+font-style:heavy;
+font-weight: 100;
+
+サイズ
+→イラストレーター上では、30px
+
+
+
+
+<design is value/>
+
+→font-family: boucherie-flared, sans-serif;
+font-style: normal;
+font-weight: 400;
+
+フォントサイズ
+→イラストレーター上では、20px
+
+
+
+
+
+とりあえずこのフォントファミリーでやってみてほしい。
+
+似たフォントファミリーを探して当て込んだだけなので、
+コードで書いてみて、様子見ます。また修正する可能性大です。
