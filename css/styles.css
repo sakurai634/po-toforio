@@ -95,8 +95,6 @@ header {
 }
 
 
-
-
 .home-content {
   position: relative;
   height: 670px;
@@ -113,8 +111,88 @@ header {
 
 
 
+
+
+
+
+/* news */
+
+.news-contents {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* blog */
+
+.blog-contents {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+/* our service */
+
+.service-contents {
+  display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
 /* contact */
 
 #contact {
+  margin-top: 11%;
   text-align: center;
+  background-color: #333;
+  padding: 8% 0;
+  /* padding-bottom: 8%;  */
+}
+
+.contact-title h2 {
+  color: #fff;
+  margin-bottom: 1%;
+  font-size: 1.5rem;
+}
+
+.contact-desc p {
+  color: #fff;
+}
+
+.contact-button {
+  margin-top: 4%;
+}
+
+.contact-button p a {
+  background-color: #fff;
+  color: #333;
+  padding: 1% 4%;
+  border-radius: 5px;
+}
+
+.contact-button p a:hover {
+  background-color: #eee;
 }
