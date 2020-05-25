@@ -62,7 +62,7 @@ header {
   padding-top: 60px;
   display: flex;
   justify-content: space-between;
-  margin: 0 6%;
+  margin: 0 13%;
 }
 
 .header-logo h1 a {
@@ -79,4 +79,16 @@ header {
 
 .header-nav nav ul li a {
   color: #222;
+}
+
+.home-content {
+  position: relative;
+  height: 600px;
+}
+
+.home-content h2 {
+  font-size: 3rem;
+  position: absolute;
+  bottom: 0;
+  margin-left: 14%;
 }
