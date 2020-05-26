@@ -48,12 +48,28 @@ img {
 }
 
 
+
+
+
+
+
+
+
+
+
 /* common  */
 
 .title {
-  font-size: 1.75rem;
   margin-top: 200px;
   padding-bottom: 50px;
+}
+
+.title h2 {
+  font-size: 1.75rem;
+}
+
+.title p {
+  font-size: 5rem;
 }
 
 section {
@@ -63,6 +79,12 @@ section {
 .wrapper {
   margin-left: 14%;
 }
+
+
+
+
+
+
 
 
 
@@ -117,6 +139,10 @@ header {
 
 /* news */
 
+.news-title {
+  color: #3FA9F5;
+}
+
 .news-contents {
   display: flex;
 }
@@ -133,6 +159,10 @@ header {
 
 /* blog */
 
+.blog-title {
+  color: #FCEE21;
+}
+
 .blog-contents {
   display: flex;
 }
@@ -147,6 +177,10 @@ header {
 
 
 /* our service */
+
+.service-title {
+  color: #7AC943;
+}
 
 .service-contents {
   display: flex;
