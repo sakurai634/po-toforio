@@ -76,7 +76,7 @@ img {
 }
 
 .title p {
-  font-size: 9rem;
+  font-size: 18rem;
 }
 
 section {
@@ -89,7 +89,7 @@ section {
 
 .kasane {
   position: absolute;
-  bottom: -50px;
+  bottom: -120px;
   opacity: 0.3;
 }
 
