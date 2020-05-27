@@ -68,7 +68,7 @@ img {
 .title {
   position: relative;
   margin-top: 200px;
-  padding-bottom: 50px;
+  padding-bottom: 10px;
 }
 
 .title h2 {
@@ -90,7 +90,7 @@ section {
 .kasane {
   position: absolute;
   bottom: -170px;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .content {
