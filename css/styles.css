@@ -113,33 +113,45 @@ section {
 /* header */
 
 header {
-  padding-top: 60px;
+  padding-top: 50px;
   display: flex;
   justify-content: space-between;
-  margin: 0 13%;
+  margin-left: 13%;
+  margin-right: 7%;
+}
+
+.header-logo {
+  text-align: center;
 }
 
 .header-logo h1 a {
-  color: #222;
-  font-size: 1.125rem;
+  color: #dd0f0f;
+  font-size: 1.75rem;
   transition: 0.3s;
+  line-height: 0.3px;
+  letter-spacing: 1px;
 }
 
-.header-logo h1 a:hover {
-  color: #0000FF;
+.header-logo h1 a span {
+  color: #3b9ded;
+  font-size: 1rem;
+  letter-spacing: 4px;
 }
+
 
 .header-nav nav ul {
   display: flex;
 }
 
 .header-nav nav ul li {
-  padding: 0 15px;
+  padding: 0 50px;
+  margin-top: 25px;
+
 }
 
 .header-nav nav ul li a {
   color: #222;
-  font-size: 1.125rem;
+  font-size: 1.25rem;
   transition: 0.3s;
 }
 
@@ -150,13 +162,17 @@ header {
 
 .home-content {
   position: relative;
-  height: 670px;
+  height: 530px;
 }
 
 .home-content h2 {
-  font-size: 3rem;
+  font-size: 6.1rem;
   position: absolute;
   bottom: 0;
+  color: #444;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 103px;
 }
 
 
