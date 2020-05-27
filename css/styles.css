@@ -32,6 +32,12 @@ time, mark, audio, video {
   background:transparent;
 }
 
+body {
+  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
 
 nav, ul, li {
   list-style:none;
@@ -79,12 +85,13 @@ section {
 
 .wrapper {
   margin-left: 14%;
+
 }
 
 .kasane {
   position: absolute;
   top: 0;
-  opacity: 0.5;
+  opacity: 0.3;
 }
 
 .content {
@@ -116,6 +123,11 @@ header {
 .header-logo h1 a {
   color: #222;
   font-size: 1.125rem;
+  transition: 0.3s;
+}
+
+.header-logo h1 a:hover {
+  color: #0000FF;
 }
 
 .header-nav nav ul {
@@ -129,6 +141,11 @@ header {
 .header-nav nav ul li a {
   color: #222;
   font-size: 1.125rem;
+  transition: 0.3s;
+}
+
+.header-nav nav ul li a:hover {
+  color: #0000FF;
 }
 
 
@@ -243,6 +260,7 @@ header {
   color: #333;
   padding: 1% 4%;
   border-radius: 5px;
+  transition: 0.3s;
 }
 
 .contact-button p a:hover {
