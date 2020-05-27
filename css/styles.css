@@ -72,25 +72,24 @@ img {
 }
 
 .title h2 {
-  font-size: 1.75rem;
+  font-size: 2.25rem;
 }
 
 .title p {
-  font-size: 5rem;
+  font-size: 9rem;
 }
 
 section {
   margin-bottom: 70px;
 }
 
-.wrapper {
+.home-wrapper {
   margin-left: 14%;
-
 }
 
 .kasane {
   position: absolute;
-  top: 0;
+  bottom: -50px;
   opacity: 0.3;
 }
 
@@ -171,12 +170,20 @@ header {
 
 /* news */
 
+.news-wrapper {
+  margin-left: 14%;
+  z-index: 2;
+}
+
 .news-title {
   color: #3FA9F5;
+  z-index: 1;
 }
 
 .news-contents {
   display: flex;
+  background-color: #E6E6E6;
+  padding: 40px;
 }
 
 
@@ -191,12 +198,20 @@ header {
 
 /* blog */
 
+.blog-wrapper {
+  margin-left: 14%;
+  z-index: 2;
+}
+
 .blog-title {
   color: #FCEE21;
+  z-index: 1;
 }
 
 .blog-contents {
   display: flex;
+  background-color: #E6E6E6;
+  padding: 40px;
 }
 
 
@@ -210,12 +225,21 @@ header {
 
 /* our service */
 
+.service-wrapper {
+  padding-left: 14%;
+  /* background-color: #E6E6E6; */
+  z-index: 2;
+}
+
 .service-title {
   color: #7AC943;
+  z-index: 1;
 }
 
 .service-contents {
   display: flex;
+  background-color: #E6E6E6;
+  padding: 40px;
 }
 
 .service-content {
