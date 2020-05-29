@@ -1,3 +1,430 @@
+@charset "UTF-8";
+
+
+/* reset css */
+
 /*
-Theme Name: Params
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
 */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin:0;
+  padding:0;
+  border:0;
+  outline:0;
+  font-size:100%;
+  vertical-align:baseline;
+  background:transparent;
+}
+
+body {
+  font-family: a-otf-midashi-go-mb31-pr6n, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+}
+
+
+nav, ul, li {
+  list-style:none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  object-fit: cover;
+  width: 450px;
+  height: 270px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* common  */
+
+.title {
+  position: relative;
+  margin-top: 200px;
+  padding-bottom: 10px;
+}
+
+.title h2 {
+  font-size: 4rem;
+  color: #444;
+}
+
+.title p {
+  font-size: 18rem;
+}
+
+.title p:nth-child(2) {
+  font-size: 12rem;
+}
+
+section {
+  margin-bottom: 70px;
+}
+
+.home-wrapper {
+  margin-left: 13%;
+}
+
+.kasane {
+  position: absolute;
+  bottom: -170px;
+  opacity: 0.2;
+}
+
+.content {
+  margin-right: 40px;
+  transition: 0.2s;
+}
+
+.content:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.content h3 {
+  font-size: 1.375rem;
+  margin-top: 10px;
+  color: #444;
+}
+
+.content p {
+  font-size: 1rem;
+  margin-top: 7px;
+  color: #777;
+}
+
+
+
+
+
+
+
+
+/* header */
+
+header {
+  padding-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 13%;
+  margin-right: 7%;
+}
+
+.header-logo {
+  text-align: center;
+}
+
+.header-logo h1 a {
+  color: #dd0f0f;
+  font-size: 1.75rem;
+  transition: 0.3s;
+  line-height: 0.3px;
+  letter-spacing: 1px;
+}
+
+.header-logo h1 a span {
+  color: #3b9ded;
+  font-size: 1rem;
+  letter-spacing: 4px;
+}
+
+
+.header-nav nav ul {
+  display: flex;
+}
+
+.header-nav nav ul li {
+  padding: 0 50px;
+  margin-top: 25px;
+
+}
+
+.header-nav nav ul li a {
+  color: #222;
+  font-size: 1.25rem;
+  transition: 0.3s;
+}
+
+.header-nav nav ul li a:hover {
+  color: #0000FF;
+}
+
+
+.home-content {
+  position: relative;
+  height: 530px;
+}
+
+.home-content h2 {
+  font-size: 6.1rem;
+  position: absolute;
+  bottom: 0;
+  color: #444;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 103px;
+}
+
+
+
+
+
+
+
+
+
+
+/* news */
+
+.news-wrapper {
+  margin-left: 13%;
+  z-index: 2;
+}
+
+.news-title {
+  color: #3FA9F5;
+  z-index: 1;
+}
+
+.news-contents {
+  display: flex;
+  background-color: #E6E6E6;
+  padding: 40px;
+  color: #444;
+}
+
+.news-content-one {
+  margin-left: 40px;
+}
+
+.news-content {
+  margin-left: 40px;
+  padding-bottom: 20px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* blog */
+
+.blog-wrapper {
+  margin-left: 13%;
+  z-index: 2;
+}
+
+.blog-title {
+  color: #FCEE21;
+  z-index: 1;
+}
+
+.blog-contents {
+  display: flex;
+  background-color: #E6E6E6;
+  padding: 40px;
+  color: #444;
+}
+
+
+
+
+
+
+
+
+
+
+/* our service */
+
+.service-wrapper {
+  padding-left: 13%;
+  /* background-color: #E6E6E6; */
+  z-index: 2;
+  /* margin-left: 13%; */
+}
+
+.service-title {
+  color: #7AC943;
+  z-index: 1;
+}
+
+.service-contents {
+  display: flex;
+  background-color: #E6E6E6;
+  padding: 40px;
+  color: #444;
+}
+
+.service-content {
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* contact */
+
+#contact {
+  margin-top: 11%;
+  text-align: center;
+  background-color: #333;
+  padding-top: 8%;
+  /* height: 300px; */
+  /* padding-bottom: 7%; */
+  padding-bottom: 8%; 
+}
+
+.contact-title h2 {
+  color: #fff;
+  margin-bottom: 1%;
+  font-size: 1.5rem;
+}
+
+.contact-desc p {
+  color: #fff;
+}
+
+.contact-button {
+  margin-top: 4%;
+}
+
+.contact-button p a {
+  background-color: #fff;
+  color: #333;
+  padding: 1% 4%;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.contact-button p a:hover {
+  background-color: #eee;
+}
+
+
+
+
+
+/* footer */
+
+footer {
+  height: 30px;
+  text-align: center;
+  background-color: #CCCCCC;
+  padding: 6px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* contact */
+
+.form-wrapper {
+  /* background-color: skyblue; */
+  height: 1100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.form-wrapper .contact-title {
+  margin-top: 6%;
+}
+
+.form-wrapper .contact-title h3 {
+  font-size: 2.5rem;
+}
+
+.form form div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 2%;
+}
+
+.form form div label {
+  margin-bottom: .5%;
+}
+
+.form form div input,
+.form form div textarea {
+  padding: 0 160px;
+  line-height: 20px;
+  display: inline-block;
+  font-size: 1.5rem;
+}
+
+.form form div input {
+  padding-bottom: 20px;
+  border-radius:10px;
+}
+
+.form form div textarea {
+  padding-bottom: 250px;
+  border-radius:10px;
+}
+
+.form form .button {
+  display: inline-block;
+  background-color: #333;
+  color: #ddd;
+  padding: 1% 4%;
+  border-radius: 5px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.form form .button:hover {
+  background-color: #555;
+}
