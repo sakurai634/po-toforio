@@ -602,10 +602,43 @@ img {
 
 
 
+.header-logo {}
+
+
+
 
 .news-content {
   margin-left: 0px;
   padding-bottom: 0px; 
+}
+
+
+
+
+.contact-title h2 {
+  font-size: 1.25rem;
+  margin-bottom: 11%;
+}
+
+.contact-desc p {
+  margin-bottom: 11%;
+}
+
+.contact-button {
+  margin-bottom: 9%;
+}
+
+.contact-button p a {
+  padding: 3.1% 6.5%;
+}
+
+
+
+
+footer {
+  height: 22px;
+  font-size: 0.5rem;
+  padding: 4px 0;
 }
 
 
