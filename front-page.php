@@ -78,19 +78,19 @@
 
       <div class="service-contents">
         <div class="content">
-          <img src="img/content.jpg" alt="#">
+          <img src="content.jpg" alt="#">
           <h3>小タイトル</h3>
           <p>文章が入ります文章が入ります文章が入ります</p>
         </div>
 
         <div class="content">
-          <img src="img/content.jpg" alt="#">
+          <img src="content.jpg" alt="#">
           <h3>小タイトル</h3>
           <p>文章が入ります文章が入ります文章が入ります</p>
         </div>
 
         <div class="content">
-          <img src="img/content.jpg" alt="#">
+          <img src="content.jpg" alt="#">
           <h3>小タイトル</h3>
           <p>文章が入ります文章が入ります文章が入ります</p>
         </div>
