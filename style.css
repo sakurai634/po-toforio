@@ -316,8 +316,6 @@ header {
   text-align: center;
   background-color: #333;
   padding-top: 8%;
-  /* height: 300px; */
-  /* padding-bottom: 7%; */
   padding-bottom: 8%; 
 }
 
@@ -359,12 +357,6 @@ footer {
   background-color: #CCCCCC;
   padding: 6px 0;
 }
-
-
-
-
-
-
 
 
 
@@ -457,4 +449,68 @@ footer {
 
 .single-title h3 {
   font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+
+
+  /*　画面サイズが480pxからはここを読み込む　*/
+
+@media screen and (max-width:750px) { 
+
+.header-logo h1 a {
+  font-size: 1.25rem;
+}
+
+.header-logo h1 a span {
+  font-size: 0.5rem;
+  letter-spacing: 3px;
+}
+
+.header-nav nav ul li {
+  padding: 0 17px;
+}
+
+.header-nav nav ul li a {
+  color: #222;
+  font-size: 1.125rem;
+}
+
+.home-content {
+  height: 430px;
+}
+
+.home-content h2 {
+  font-size: 3.25rem;
+  line-height: 65px;
+}
+
+
+
+
+.contact-title h2 {
+  font-size: 1.375rem;
+}
+
+.contact-desc p {
+  font-size: 0.875rem;
+}
+
+.contact-button p a {
+  padding: 2.2% 5%;
+}
+
+
+
+
+footer {
+  height: 27px;
+  font-size: 0.75rem;
+}
+
 }
