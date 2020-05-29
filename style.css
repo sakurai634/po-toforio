@@ -266,6 +266,11 @@ header {
   color: #444;
 }
 
+.blog-content {
+  margin-left: 40px;
+  padding-bottom: 20px; 
+}
+
 
 
 
@@ -592,6 +597,15 @@ img {
 
 .title p:nth-child(2) {
   font-size: 4.2rem;
+}
+
+
+
+
+
+.news-content {
+  margin-left: 0px;
+  padding-bottom: 0px; 
 }
 
 
