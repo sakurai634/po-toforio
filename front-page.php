@@ -47,26 +47,25 @@
         <p class="blog-title kasane">Blog</p>
       </div>
 
+      <?php $the_query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => -1 ) ); ?>
+      <?php if ( $the_query->have_posts() ) : ?>
       <div class="blog-contents">
-        <div class="content">
-          <img src="img/content.jpg" alt="#">
-          <h3>小タイトル</h3>
-          <p>文章が入ります文章が入ります文章が入ります</p>
+        
+        <div class="content blog-content">
+          <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+            <?php echo get_the_post_thumbnail( $post_id, $size, $attr ); ?>
+            <h3><?php the_title(); ?></h3>
+            <p><?php the_content(); ?></p>
+          <?php endwhile; ?>
         </div>
 
-        <div class="content">
-          <img src="img/content.jpg" alt="#">
-          <h3>小タイトル</h3>
-          <p>文章が入ります文章が入ります文章が入ります</p>
-        </div>
-    
-        <div class="content">
-          <img src="img/content.jpg" alt="#">
-          <h3>小タイトル</h3>
-          <p>文章が入ります文章が入ります文章が入ります</p>
-        </div>
+        <?php wp_reset_postdata(); ?>
       </div>
+      <?php endif; ?>
+
     </section>
+
+
 
     <section id="our-service" class="service-wrapper">
       <div class="title">
