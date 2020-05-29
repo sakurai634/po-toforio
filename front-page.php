@@ -27,6 +27,7 @@
       <div class="news-contents">
 
         <div class="content news-content">
+          <?php query_posts('posts_per_page=3'); ?>
           <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
             <?php echo get_the_post_thumbnail( $post_id, $size, $attr ); ?>
             <h3><?php the_title(); ?></h3>
@@ -52,6 +53,7 @@
       <div class="blog-contents">
         
         <div class="content blog-content">
+          <?php query_posts('cat=2&posts_per_page=3'); ?>
           <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
             <?php echo get_the_post_thumbnail( $post_id, $size, $attr ); ?>
             <h3><?php the_title(); ?></h3>
