@@ -371,13 +371,14 @@ footer {
 
 .form-wrapper {
   /* background-color: skyblue; */
-  height: 1100px;
+  height: 790px;
   text-align: center;
   margin: 0 auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
 }
 
 .form-wrapper .contact-title {
-  margin-top: 6%;
 }
 
 .form-wrapper .contact-title h3 {
