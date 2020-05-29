@@ -1,3 +1,11 @@
+/*
+Theme Name: Original Theme
+Theme URI: 
+Description: Paramsのオリジナルテーマ
+Author: 
+Author URI:
+*/
+
 @charset "UTF-8";
 
 
@@ -220,9 +228,9 @@ header {
   color: #444;
 }
 
-.news-content-one {
+/* .news-content-one {
   margin-left: 40px;
-}
+} */
 
 .news-content {
   margin-left: 40px;
