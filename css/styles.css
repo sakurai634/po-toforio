@@ -307,8 +307,10 @@ header {
   margin-top: 11%;
   text-align: center;
   background-color: #333;
-  padding: 8% 0;
-  /* padding-bottom: 8%;  */
+  padding-top: 8%;
+  /* height: 300px; */
+  /* padding-bottom: 7%; */
+  padding-bottom: 8%; 
 }
 
 .contact-title h2 {
@@ -335,4 +337,17 @@ header {
 
 .contact-button p a:hover {
   background-color: #eee;
+}
+
+
+
+
+
+/* footer */
+
+footer {
+  height: 30px;
+  text-align: center;
+  background-color: #CCCCCC;
+  padding: 6px 0;
 }
