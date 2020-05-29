@@ -378,9 +378,6 @@ footer {
   margin-top: 5%;
 }
 
-.form-wrapper .contact-title {
-}
-
 .form-wrapper .contact-title h3 {
   font-size: 2.5rem;
 }
@@ -428,4 +425,28 @@ footer {
 
 .form form .button:hover {
   background-color: #555;
+}
+
+
+
+
+
+
+
+
+
+
+/* single */
+
+.single-wrapper {
+  /* background-color: skyblue; */
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.single-title h3 {
+  font-size: 2.5rem;
 }
