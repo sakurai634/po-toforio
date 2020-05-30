@@ -650,6 +650,12 @@ footer {
   
   #pull {
     display: block;
+    margin-top: 33%;
+  }
+
+  #pull i {
+    font-size: 23px;
+    color: #222;
   }
 
 
