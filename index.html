@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/css/swiper.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.3.3/js/swiper.min.js"></script>
     <title>Design Is  Corporate Value</title>
 </head>
 <body>
@@ -82,7 +84,7 @@
         <button type="button" class="slider-ctrl-btn is-next" data-ctrl="next">Bishojo</button>
       </div>
 
-      <div class="blog-contents slider-list">
+      <div class="blog-contents">
         <div class="content">
           <img src="content.jpg" alt="#">
           <h3>小タイトル</h3>
@@ -157,41 +159,7 @@
     
     <script>
       console.log("Hello Lololia");
-
-var pages = [];
-var numCount = $('.slider-list div').length;
-
-var num = 0;
-
-for(var i = 0; i < numCount; i++){
-  if (i == 0) {
-    pages.push(0);
-  } else {
-    num += - $('.slider-list div').eq(i).width();
-    pages.push(num);
-  }
-}
-
-(this).data('ctrl')
-var pagesNum = 0;
-
-$(".slider-ctrl-btn").click(function () {
-  if ($(this).data('ctrl') === 'next') {
-    var step = 1;
-    pagesNum = pagesNum + step;
-    if (pagesNum === pages.length) {
-      pagesNum = 0;
-    }
-    $(".slider-list").animate({left: pages[pagesNum]})
-    } else if ($(this).data('ctrl') === 'prev') {
-    var back = -1;
-    pagesNum = pagesNum + back;
-    if (pagesNum === -1) {
-      pagesNum = pages.length - 1;
-    }
-    $(".slider-list").animate({left: pages[pagesNum]})
-  }
-});
+      
     </script>
 </body>
 </html>
