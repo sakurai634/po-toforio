@@ -622,6 +622,24 @@ footer {
 
 
 
+  .home-wrapper {
+    margin-left: 6%;
+  }
+
+  .home-content {
+    height: 360px;
+  }
+
+  .home-content h2 {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+    line-height: 36px;
+  }
+
+
+
+
+
   .header-logo {
     margin-top: 0;
   }
@@ -636,8 +654,11 @@ footer {
 
 
 
+
+
+
   .news-wrapper {
-    margin-left: 3%;
+    margin-left: 6%;
   }
 
   .news-content {
@@ -648,14 +669,14 @@ footer {
 
 
   .blog-wrapper {
-    margin-left: 3%;
+    margin-left: 6%;
   }
 
 
 
 
   .service-wrapper {
-    margin-left: 3%;
+    margin-left: 6%;
   }
 
 
