@@ -8,7 +8,6 @@ Author URI:
 
 @charset "UTF-8";
 
-
 /* reset css */
 
 /*
@@ -19,25 +18,82 @@ Author: Richard Clark - http://richclarkdesign.com
 Twitter: @rich_clark
 */
 
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-  margin:0;
-  padding:0;
-  border:0;
-  outline:0;
-  font-size:100%;
-  vertical-align:baseline;
-  background:transparent;
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
 }
 
 body {
@@ -46,9 +102,10 @@ body {
   font-weight: 600;
 }
 
-
-nav, ul, li {
-  list-style:none;
+nav,
+ul,
+li {
+  list-style: none;
 }
 
 a {
@@ -60,16 +117,6 @@ img {
   width: 450px;
   height: 270px;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* common  */
 
@@ -150,13 +197,6 @@ nav ul {
   font-size: 0.75rem;
 }
 
-
-
-
-
-
-
-
 /* header */
 
 header {
@@ -185,7 +225,6 @@ header {
   letter-spacing: 4px;
 }
 
-
 .header-nav nav ul {
   display: flex;
 }
@@ -193,7 +232,6 @@ header {
 .header-nav nav ul li {
   padding: 0 50px;
   margin-top: 25px;
-
 }
 
 .header-nav nav ul li a {
@@ -203,13 +241,57 @@ header {
 }
 
 .header-nav nav ul li a:hover {
-  color: #0000FF;
+  color: #0000ff;
 }
-
 
 .home-content {
   position: relative;
   height: 530px;
+}
+
+/* 円のスタイル大樹作 */
+.circle{
+  width: 100%;
+  text-align: center;
+}
+
+.circle1 {
+  position: relative;
+  display: inline-block;
+  width: 39rem;
+  height: 39rem;
+  border-radius: 50%; /*角丸*/
+  opacity: 0.8;
+  background: #3fa9f5;
+}
+
+.circle2 {
+  position: absolute;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+  display: inline-block;
+  width: 32rem;
+  height: 32rem;
+  border-radius: 50%; /*角丸*/
+  opacity: 0.8;
+  background: #fcff37;
+}
+
+.circle3 {
+  position: absolute;position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit- transform: translateY(-50%) translateX(-50%);
+  display: inline-block;
+  width: 23rem;
+  height: 23rem;
+  border-radius: 50%; /*角丸*/
+  opacity: 0.8;
+  background: #7ac943;
 }
 
 .home-content h2 {
@@ -222,15 +304,6 @@ header {
   line-height: 103px;
 }
 
-
-
-
-
-
-
-
-
-
 /* news */
 
 .news-wrapper {
@@ -239,13 +312,13 @@ header {
 }
 
 .news-title {
-  color: #3FA9F5;
+  color: #3fa9f5;
   z-index: 1;
 }
 
 .news-contents {
   display: flex;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   padding: 40px;
   color: #444;
 }
@@ -256,18 +329,8 @@ header {
 
 .news-content {
   margin-left: 40px;
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
-
 
 /* blog */
 
@@ -277,30 +340,21 @@ header {
 }
 
 .blog-title {
-  color: #FCEE21;
+  color: #fcee21;
   z-index: 1;
 }
 
 .blog-contents {
   display: flex;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   padding: 40px;
   color: #444;
 }
 
 .blog-content {
   margin-left: 40px;
-  padding-bottom: 20px; 
+  padding-bottom: 20px;
 }
-
-
-
-
-
-
-
-
-
 
 /* our service */
 
@@ -312,13 +366,13 @@ header {
 }
 
 .service-title {
-  color: #7AC943;
+  color: #7ac943;
   z-index: 1;
 }
 
 .service-contents {
   display: flex;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   padding: 40px;
   color: #444;
 }
@@ -327,15 +381,6 @@ header {
   margin-right: 10px;
 }
 
-
-
-
-
-
-
-
-
-
 /* contact */
 
 #contact {
@@ -343,7 +388,7 @@ header {
   text-align: center;
   background-color: #333;
   padding-top: 8%;
-  padding-bottom: 8%; 
+  padding-bottom: 8%;
 }
 
 .contact-title h2 {
@@ -372,27 +417,14 @@ header {
   background-color: #eee;
 }
 
-
-
-
-
 /* footer */
 
 footer {
   height: 30px;
   text-align: center;
-  background-color: #CCCCCC;
+  background-color: #cccccc;
   padding: 6px 0;
 }
-
-
-
-
-
-
-
-
-
 
 /* contact */
 
@@ -419,7 +451,7 @@ footer {
 }
 
 .form form div label {
-  margin-bottom: .5%;
+  margin-bottom: 0.5%;
 }
 
 .form form div input,
@@ -432,12 +464,12 @@ footer {
 
 .form form div input {
   padding-bottom: 20px;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 .form form div textarea {
   padding-bottom: 250px;
-  border-radius:10px;
+  border-radius: 10px;
 }
 
 .form form .button {
@@ -454,15 +486,6 @@ footer {
   background-color: #555;
 }
 
-
-
-
-
-
-
-
-
-
 /* single */
 
 .single-wrapper {
@@ -478,18 +501,9 @@ footer {
   font-size: 2.5rem;
 }
 
+/*　画面サイズが750pxからはここを読み込む　*/
 
-
-
-
-
-
-
-
-  /*　画面サイズが750pxからはここを読み込む　*/
-
-@media screen and (max-width:1024px) { 
-
+@media screen and (max-width: 1024px) {
   .title p:nth-child(2) {
     font-size: 9rem;
   }
@@ -525,8 +539,6 @@ footer {
     line-height: 65px;
   }
 
-
-
   .news-wrapper {
     margin-left: 0%;
   }
@@ -536,8 +548,6 @@ footer {
     align-items: center;
     flex-flow: wrap;
   }
-
-
 
   .blog-wrapper {
     margin-left: 0%;
@@ -549,7 +559,6 @@ footer {
     flex-flow: wrap;
   }
 
-
   .service-wrapper {
     padding-left: 0%;
   }
@@ -559,9 +568,6 @@ footer {
     align-items: center;
     flex-flow: wrap;
   }
-
-
-
 
   .contact-title h2 {
     font-size: 1.375rem;
@@ -575,29 +581,15 @@ footer {
     padding: 2.2% 5%;
   }
 
-
-
-
   footer {
     height: 27px;
     font-size: 0.75rem;
   }
-
 }
-
-
-
-
-
-
-
-
-
 
 /*　画面サイズが480pxからはここを読み込む　*/
 
-@media screen and (max-width:480px) {
-
+@media screen and (max-width: 480px) {
   img {
     width: 300px;
     height: 180px;
@@ -610,7 +602,7 @@ footer {
   .content h3 {
     font-size: 1rem;
   }
-  
+
   .content p {
     font-size: 0.625rem;
   }
@@ -637,9 +629,6 @@ footer {
     display: block;
   }
 
-
-
-
   .home-wrapper {
     margin-left: 6%;
   }
@@ -654,10 +643,6 @@ footer {
     line-height: 36px;
   }
 
-
-
-
-
   .header-logo {
     margin-top: 0;
   }
@@ -665,7 +650,7 @@ footer {
   .header-nav nav ul li {
     display: none;
   }
-  
+
   #pull {
     display: block;
     margin-top: 33%;
@@ -676,34 +661,22 @@ footer {
     color: #222;
   }
 
-
-
-
-
-
   .news-wrapper {
     margin-left: 6%;
   }
 
   .news-content {
     margin-left: 0px;
-    padding-bottom: 0px; 
+    padding-bottom: 0px;
   }
-
-
 
   .blog-wrapper {
     margin-left: 6%;
   }
 
-
-
-
   .service-wrapper {
     margin-left: 6%;
   }
-
-
 
   .contact-title h2 {
     font-size: 1.25rem;
@@ -722,14 +695,9 @@ footer {
     padding: 3.1% 6.5%;
   }
 
-
-
-
   footer {
     height: 22px;
     font-size: 0.5rem;
     padding: 4px 0;
   }
-
-
 }
