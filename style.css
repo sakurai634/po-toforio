@@ -106,6 +106,14 @@ section {
   opacity: 0.2;
 }
 
+nav ul {
+  display: block;
+}
+
+#pull {
+  display: none;
+}
+
 .content {
   margin-right: 40px;
   transition: 0.2s;
@@ -577,8 +585,20 @@ footer {
 @media screen and (max-width:480px) {
 
   img {
-    width: 350px;
-    height: 210px;
+    width: 300px;
+    height: 180px;
+  }
+
+  .content {
+    margin-top: 8%;
+  }
+
+  .content h3 {
+    font-size: 1rem;
+  }
+  
+  .content p {
+    font-size: 0.625rem;
   }
 
   .title {
@@ -603,33 +623,40 @@ footer {
 
 
   .header-logo {
-
-  }
-
-  .header-logo h1 a .main-logo {
-    font-size: 1.125rem;
-  }
-
-  .header-logo h1 a .sub-logo {
-    font-size: 0.375rem;
+    margin-top: 0;
   }
 
   .header-nav nav ul li {
-    padding: 0 12px;
+    display: none;
+  }
+  
+  #pull {
+    display: block;
   }
 
-  .header-nav nav ul li a {
-    font-size: 0.875rem;
+
+
+  .news-wrapper {
+    margin-left: 3%;
   }
-
-
-
 
   .news-content {
     margin-left: 0px;
     padding-bottom: 0px; 
   }
 
+
+
+  .blog-wrapper {
+    margin-left: 3%;
+  }
+
+
+
+
+  .service-wrapper {
+    margin-left: 3%;
+  }
 
 
 
