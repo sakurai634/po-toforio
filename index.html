@@ -40,6 +40,11 @@
         <p class="news-title kasane">News</p>
       </div>
 
+      <div class="slide-button">
+        <button type="button" class="slider-ctrl-btn is-prev" data-ctrl="prev">Chiken</button>
+        <button type="button" class="slider-ctrl-btn is-next" data-ctrl="next">Ra-men</button>
+      </div>
+
       <div class="news-contents">
         <div class="content news-content news-content-one">
           <img src="content.jpg" alt="#">
@@ -72,7 +77,12 @@
         <p class="blog-title kasane">Blog</p>
       </div>
 
-      <div class="blog-contents">
+      <div class="slide-button">
+        <button type="button" class="slider-ctrl-btn is-prev" data-ctrl="prev">Bijo</button>
+        <button type="button" class="slider-ctrl-btn is-next" data-ctrl="next">Bishojo</button>
+      </div>
+
+      <div class="blog-contents slider-list">
         <div class="content">
           <img src="content.jpg" alt="#">
           <h3>小タイトル</h3>
@@ -145,6 +155,43 @@
       <small>© 2020 < params ></small>
     </footer>
     
-    <script src="main.js"></script>
+    <script>
+      console.log("Hello Lololia");
+
+var pages = [];
+var numCount = $('.slider-list div').length;
+
+var num = 0;
+
+for(var i = 0; i < numCount; i++){
+  if (i == 0) {
+    pages.push(0);
+  } else {
+    num += - $('.slider-list div').eq(i).width();
+    pages.push(num);
+  }
+}
+
+(this).data('ctrl')
+var pagesNum = 0;
+
+$(".slider-ctrl-btn").click(function () {
+  if ($(this).data('ctrl') === 'next') {
+    var step = 1;
+    pagesNum = pagesNum + step;
+    if (pagesNum === pages.length) {
+      pagesNum = 0;
+    }
+    $(".slider-list").animate({left: pages[pagesNum]})
+    } else if ($(this).data('ctrl') === 'prev') {
+    var back = -1;
+    pagesNum = pagesNum + back;
+    if (pagesNum === -1) {
+      pagesNum = pages.length - 1;
+    }
+    $(".slider-list").animate({left: pages[pagesNum]})
+  }
+});
+    </script>
 </body>
 </html>
