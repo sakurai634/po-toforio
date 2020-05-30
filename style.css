@@ -136,6 +136,20 @@ nav ul {
   color: #777;
 }
 
+.details-button {
+  display: none;
+
+  margin-top: 16%;
+}
+
+.details-button p a {
+  background-color: #000;
+  color: #fff;
+  padding: 16px 38px;
+  border-radius: 5px;
+  font-size: 0.75rem;
+}
+
 
 
 
@@ -617,6 +631,10 @@ footer {
 
   .title p:nth-child(2) {
     font-size: 4.2rem;
+  }
+
+  .details-button {
+    display: block;
   }
 
 
