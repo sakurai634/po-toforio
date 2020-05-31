@@ -71,6 +71,13 @@ img {
 
 
 
+
+
+
+
+
+
+
 /* common  */
 
 .title {
@@ -701,6 +708,10 @@ footer {
   .news-content {
     margin-left: 0px;
     padding-bottom: 0px; 
+  }
+
+  .slide-button {
+    display: none;
   }
 
 
