@@ -12,8 +12,15 @@
     <div id="home" class="big-bg">
       <?php get_header();?>
       <div class="home-content home-wrapper">
-        <h2>Design <br>is Corporate Value</h2>
-      </div>
+          <div class="circle">
+            <div class="circle1">
+              <div class="circle2">
+                <div class="circle3"></div>
+              </div>
+            </div>
+          </div>
+          <h2>Design <br>is Corporate Value</h2>
+        </div>
     </div>
 
     <section id="news" class="news-wrapper">

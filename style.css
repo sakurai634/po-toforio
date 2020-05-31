@@ -651,6 +651,24 @@ footer {
     display: block;
   }
 
+  .circle1 {
+    width: 17.7rem;
+    height: 17.7rem;
+    margin-top: 83px;
+    margin-right: 17px;
+  }
+  
+  .circle2 {
+    width: 14.5rem;
+    height: 14.5rem;
+    /* margin-top: 200px; */
+  }
+  
+  .circle3 {
+    width: 10.4rem;
+    height: 10.4rem;
+    /* margin-top: 200px; */
+  }
 
 
 
