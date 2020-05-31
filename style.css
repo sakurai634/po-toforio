@@ -61,7 +61,9 @@ img {
   height: 270px;
 }
 
-
+#menu {
+  display: none;
+}
 
 
 
@@ -625,6 +627,14 @@ footer {
     width: 300px;
     height: 180px;
   }
+
+  #menu {
+    display: block;
+  }
+
+
+
+
 
   .content {
     margin-top: 8%;
