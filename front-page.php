@@ -2,7 +2,7 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta content="<?php bloginfo('description'); ?>">
     <link rel="stylesheet" href="<?php echo get_stylesheet_uri(); ?>">
     <!-- <title>Design Is  Corporate Value</title> -->
@@ -25,16 +25,14 @@
       <?php $the_query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => -1 ) ); ?>
       <?php if ( $the_query->have_posts() ) : ?>
       <div class="news-contents">
-
-        <div class="content news-content">
-          <?php query_posts('posts_per_page=3'); ?>
-          <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+        <?php query_posts('posts_per_page=3'); ?>
+        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+          <div class="content news-content">
             <?php echo get_the_post_thumbnail( $post_id, $size, $attr ); ?>
             <h3><?php the_title(); ?></h3>
             <p><?php the_content(); ?></p>
-          <?php endwhile; ?>
-        </div>
-
+          </div>
+        <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
       </div>
       <?php endif; ?>
@@ -51,17 +49,15 @@
       <?php $the_query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => -1 ) ); ?>
       <?php if ( $the_query->have_posts() ) : ?>
       <div class="blog-contents">
-        
+      <?php query_posts('cat=2&posts_per_page=3'); ?>
+        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <div class="content blog-content">
-          <?php query_posts('cat=2&posts_per_page=3'); ?>
-          <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-            <?php echo get_the_post_thumbnail( $post_id, $size, $attr ); ?>
-            <h3><?php the_title(); ?></h3>
-            <p><?php the_content(); ?></p>
-          <?php endwhile; ?>
+          <?php echo get_the_post_thumbnail( $post_id, $size, $attr ); ?>
+          <h3><?php the_title(); ?></h3>
+          <p><?php the_content(); ?></p>
         </div>
-
-        <?php wp_reset_postdata(); ?>
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(); ?>
       </div>
       <?php endif; ?>
 
