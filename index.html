@@ -11,16 +11,6 @@
 </head>
 <body>
   <div id="cover">
-    <div id="menu" class="cover-nav">
-      <p id="hide">×</p>
-      <h3>menu</h3>
-      <nav>
-        <ul>
-          <li><a href="#">- About</a></li>
-          <li><a href="#">- Contact</a></li>
-        </ul>
-      </nav>
-    </div>
     <div id="home" class="big-bg">
         <header>
           <div class="header-logo">
@@ -34,11 +24,24 @@
 
           <div class="header-nav">
             <nav>
-              <div id="pull"><i id="show" class="fa fa-bars fa-lg"></i></div>
-              <ul class="main-nav">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-              </ul>
+              <input id="nav-input" type="checkbox" class="nav-unshown">
+              <label id="nav-open" for="nav-input"><span></span></label>
+              <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+              <div id="nav-content">
+                <div class="header-nav">
+                  <nav>
+                    <ul>
+                      <li><a href="#">About</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              <div id="nav-content" class="phone">
+                <p>menu</p>
+                <a href="#">- About</a>
+                <a href="#">- Contact</a>
+              </div>
             </nav>
           </div>
         </header>
@@ -52,6 +55,7 @@
           </div>
           <h2>Design <br>is Corporate Value</h2>
         </div>
+
     </div>
 
     <section id="news" class="news-wrapper">

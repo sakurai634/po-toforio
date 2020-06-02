@@ -80,7 +80,7 @@
       
 
       <div class="service-contents">
-        <div class="content">
+        <!-- <div class="content">
           <img src="content.jpg" alt="#">
           <h3>小タイトル</h3>
           <p>文章が入ります文章が入ります文章が入ります</p>
@@ -96,7 +96,7 @@
           <img src="content.jpg" alt="#">
           <h3>小タイトル</h3>
           <p>文章が入ります文章が入ります文章が入ります</p>
-        </div>
+        </div> -->
       </div>
     </section>
 
@@ -116,7 +116,7 @@
       </div>
     </div>
 
-    <?php get_sidebar();?>
+    <?php get_footer();?>
     
     <script src="main.js"></script>
 </body>
