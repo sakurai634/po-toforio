@@ -31,7 +31,7 @@
 
       <?php $the_query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => -1 ) ); ?>
       <?php if ( $the_query->have_posts() ) : ?>
-      <div class="news-contents">
+      <div class="over-flow news-contents">
         <?php query_posts('posts_per_page=3'); ?>
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
           <div class="content news-content">
@@ -41,6 +41,11 @@
           </div>
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
+
+        <div class="details-button">
+          <p><a href="#">詳しく見る</a></p>
+        </div>
+    
       </div>
       <?php endif; ?>
 
@@ -55,7 +60,7 @@
 
       <?php $the_query = new WP_Query( array( 'post_type' => 'post', 'posts_per_page' => -1 ) ); ?>
       <?php if ( $the_query->have_posts() ) : ?>
-      <div class="blog-contents">
+      <div class="over-flow blog-contents">
       <?php query_posts('cat=2&posts_per_page=3'); ?>
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <div class="content blog-content">
@@ -65,6 +70,10 @@
         </div>
       <?php endwhile; ?>
       <?php wp_reset_postdata(); ?>
+
+      <div class="details-button">
+        <p><a href="#">詳しく見る</a></p>
+      </div>
       </div>
       <?php endif; ?>
 
@@ -79,7 +88,7 @@
       </div>
       
 
-      <div class="service-contents">
+      <div class="over-flow service-contents">
         <!-- <div class="content">
           <img src="content.jpg" alt="#">
           <h3>小タイトル</h3>

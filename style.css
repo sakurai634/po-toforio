@@ -163,13 +163,14 @@ section {
 }
 
 .home-wrapper {
-  margin-left: 13%;
+  margin-left: 0%
 }
 
 .kasane {
   position: absolute;
-  bottom: -170px;
+  bottom: -70px;
   opacity: 0.2;
+  z-index: -1;
 }
 
 nav ul {
@@ -233,10 +234,10 @@ nav ul {
 /* header */
 
 header {
-  padding-top: 50px;
+  padding-top: 60px;
   display: flex;
   justify-content: space-between;
-  margin-left: 13%;
+  margin-left: 7%;
   margin-right: 7%;
 }
 
@@ -244,18 +245,10 @@ header {
   text-align: center;
 }
 
-.header-logo h1 a .main-logo {
-  color: #dd0f0f;
-  font-size: 1.75rem;
-  transition: 0.3s;
-  line-height: 28px;
-  letter-spacing: 1px;
-}
-
-.header-logo h1 a .sub-logo {
-  color: #3b9ded;
-  font-size: 1rem;
-  letter-spacing: 4px;
+.header-logo h1 a img {
+  object-fit: cover;
+  width: 230px;
+  height: 67px;
 }
 
 .header-nav nav ul {
@@ -282,6 +275,22 @@ header {
   height: 530px;
 }
 
+.home-content h2 {
+  margin-left: 13%;
+  font-size: 6.1rem;
+  position: absolute;
+  bottom: 0;
+  color: #444;
+  font-weight: bold;
+  letter-spacing: 3px;
+  line-height: 103px;
+}
+
+/* コンテンツ横幅隠し */
+.over-flow{
+  overflow: scroll;
+}
+
 /* 円のスタイル大樹作 */
 .circle{
   width: 100%;
@@ -300,7 +309,6 @@ header {
 
 .circle2 {
   position: absolute;
-  position: absolute;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
@@ -314,7 +322,7 @@ header {
 }
 
 .circle3 {
-  position: absolute;position: absolute;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translateY(-50%) translateX(-50%);
@@ -327,26 +335,16 @@ header {
   background: #7ac943;
 }
 
-.home-content h2 {
-  font-size: 6.1rem;
-  position: absolute;
-  bottom: 0;
-  color: #444;
-  font-weight: bold;
-  letter-spacing: 3px;
-  line-height: 103px;
-}
-
 /* news */
 
 .news-wrapper {
-  margin-left: 13%;
+  margin-left: 7%;
   z-index: 2;
 }
 
 .news-title {
   color: #3fa9f5;
-  z-index: 1;
+  z-index: -1;
 }
 
 .news-contents {
@@ -356,12 +354,7 @@ header {
   color: #444;
 }
 
-/* .news-content-one {
-  margin-left: 40px;
-} */
-
 .news-content {
-  margin-left: 40px;
   padding-bottom: 20px;
 }
 
@@ -391,13 +384,13 @@ header {
 /* blog */
 
 .blog-wrapper {
-  margin-left: 13%;
+  margin-left: 7%;
   z-index: 2;
 }
 
 .blog-title {
+  opacity: 0.5;
   color: #fcee21;
-  z-index: 1;
 }
 
 .blog-contents {
@@ -408,33 +401,60 @@ header {
 }
 
 .blog-content {
-  margin-left: 40px;
   padding-bottom: 20px;
 }
+
+
+
+
+
+
+
+
 
 /* our service */
 
 .service-wrapper {
-  padding-left: 13%;
-  /* background-color: #E6E6E6; */
   z-index: 2;
-  /* margin-left: 13%; */
+}
+
+.service-wrapper .title {
+  margin-left: 7%;
+  margin-bottom: 
 }
 
 .service-title {
   color: #7ac943;
-  z-index: 1;
+  z-index: -1;
 }
 
 .service-contents {
   display: flex;
+  justify-content: center;
   background-color: #e6e6e6;
   padding: 40px;
   color: #444;
 }
 
 .service-content {
-  margin-right: 10px;
+  /* margin-right: 10px; */
+  transition: 0.2s;
+  padding: 17px;
+}
+
+
+.service-content:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.service-sub {
+  margin-top: 32px; 
+}
+
+.service-pickup img {
+  width: 500px;
+  height: 300px;
 }
 
 /* contact */
@@ -646,6 +666,7 @@ footer {
 /*　画面サイズが480pxからはここを読み込む　*/
 
 @media screen and (max-width: 480px) {
+
   img {
     width: 300px;
     height: 180px;
@@ -659,7 +680,7 @@ footer {
     width: 17.7rem;
     height: 17.7rem;
     margin-top: 83px;
-    margin-right: 17px;
+    margin-right: 4px;
   }
   
   .circle2 {
@@ -711,6 +732,9 @@ footer {
     display: block;
   }
 
+  .kasane {
+    bottom: -133px;
+  }
 
 
 
@@ -721,7 +745,7 @@ footer {
 
 
   .home-wrapper {
-    margin-left: 6%;
+    margin-left: 1%;
   }
 
   .home-content {
@@ -729,13 +753,19 @@ footer {
   }
 
   .home-content h2 {
-    font-size: 2rem;
+    font-size: 1.75rem;
     letter-spacing: 0.5px;
     line-height: 36px;
   }
 
   .header-logo {
     margin-top: 0;
+  }
+
+  .header-logo h1 a img {
+    width: 155px;
+    height: 45px;
+    margin-right: 110px;
   }
 
   .header-nav nav ul li {
@@ -763,6 +793,11 @@ footer {
 
   .service-wrapper {
     margin-left: 6%;
+  }
+
+  .service-pickup img {
+    width: 300px;
+    height: 180px;
   }
 
   .contact-title h2 {
